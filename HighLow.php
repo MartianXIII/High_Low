@@ -1,6 +1,4 @@
 <?php
-//$firstName = trim(fgets(STDIN));
-//fwrite(STDOUT, "Hello $firstName\n");
 function HighLow () {
     fwrite(STDOUT, "wanna play?" . PHP_EOL);
     $gamePicks = rand( 1, 100);
@@ -18,15 +16,15 @@ function HighLow () {
 
       if ($usersGuess == $gamePicks) {
            fwrite(STDOUT, 'Whoa Nice one' . PHP_EOL);
+           fwrite(STDOUT, )
            GameOn();
-      }
+      }  
 }
 function GameOn () {
   fwrite(STDOUT, 'Play Again? y/n');
   $usersGuess = trim(fgets(STDIN));
   if ($usersGuess == 'y') {
   HighLow();
-
   }
 }
 HighLow();
